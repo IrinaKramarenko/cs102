@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup  # type: ignore
 
 
 def extract_news(parser):
-    """Extract news from a given web page"""
+    """Extract news from a given web page."""
 
     def extract_first_integer_from_tag(tag, separator):
         try:
