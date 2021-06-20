@@ -4,7 +4,7 @@ import typing as tp
 import unittest
 from unittest.mock import patch
 
-import responses
+import responses  # type: ignore
 import scraputils as scrap
 from bs4 import BeautifulSoup
 

@@ -1,6 +1,6 @@
 import typing as tp
 
-import nltk
+import nltk  # type: ignore
 
 
 def clear(s: str) -> str:
