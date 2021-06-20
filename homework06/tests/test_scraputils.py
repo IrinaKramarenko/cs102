@@ -8,7 +8,6 @@ import scraputils as scrap
 import responses
 from bs4 import BeautifulSoup
 
-
 class ScrapperTestCase(unittest.TestCase):
     def test_extract_news(self) -> None:
         expected_news = [
