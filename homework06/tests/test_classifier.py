@@ -2,8 +2,8 @@ import csv
 import os
 import unittest
 
-import naive_bayes.bayes as bayes
-import naive_bayes.stemmer as stemmer
+import bayes as bayes
+import stemmer as stemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
@@ -12,7 +12,8 @@ from sklearn.pipeline import Pipeline
 class ClassifierTestCase(unittest.TestCase):
     def test_classifier_accuracy(self) -> None:
         with open(
-            f"{os.path.dirname(os.path.realpath(__file__))}/../data/SMSSpamCollection"
+            f"{os.path.dirname(os.path.realpath(__file__))}/../data/SMSSpamCollection",
+            encoding="utf-8",
         ) as f:  # fix for unknown error in unittests
             data = list(csv.reader(f, delimiter="\t"))
         X, y = [], []

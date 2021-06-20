@@ -4,9 +4,10 @@ import typing as tp
 import unittest
 from unittest.mock import patch
 
-import scraputils as scrap
 import responses
+import scraputils as scrap
 from bs4 import BeautifulSoup
+
 
 class ScrapperTestCase(unittest.TestCase):
     def test_extract_news(self) -> None:
